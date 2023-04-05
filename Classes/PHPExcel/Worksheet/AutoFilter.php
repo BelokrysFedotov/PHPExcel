@@ -604,6 +604,7 @@ class PHPExcel_Worksheet_AutoFilter
             switch ($filterColumn->getFilterType()) {
                 case PHPExcel_Worksheet_AutoFilter_Column::AUTOFILTER_FILTERTYPE_FILTER:
                     $ruleValues = array();
+                    $ruleType = null;
                     //    Build a list of the filter value selections
                     foreach ($rules as $rule) {
                         $ruleType = $rule->getRuleType();
